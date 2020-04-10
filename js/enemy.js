@@ -1,7 +1,7 @@
 let enemy;
 
 function Enemy(enemyName, health, chakra, strength, agility, speed){
-    this.playerName = enemyName;
+    this.enemyName = enemyName;
     this.health = health;
     this.chakra = chakra;
     this.strength = strength;
