@@ -20,7 +20,7 @@ function Player(playerName, health, chakra, strength, agility, speed){
     let playerAttack = function(){
         let  calcBaseDamage;
         if (player.mana > 0) {
-            calcBaseDamage = player.strength * player.mana/ 1000;
+            calcBaseDamage = player.strength * player.mana / 1000;
         }  else {
             calcBaseDamage = player.strength * player.agility / 1000;
         }
@@ -35,7 +35,7 @@ function Player(playerName, health, chakra, strength, agility, speed){
        let enemyAttack = function(){
            let  calcBaseDamage;
            if (enemy.mana > 0) {
-               calcBaseDamage = enemy.strength * enemy.mana/ 1000;
+               calcBaseDamage = enemy.strength * enemy.mana / 1000;
            }  else {
                calcBaseDamage = enemy.strength * player.agility / 1000;
            }
@@ -56,7 +56,7 @@ function Player(playerName, health, chakra, strength, agility, speed){
                  let playerAttackValues = playerAttack();
                  let totalDamage = playerAttackValues[0] * playerAttackValues[1];
                  enemy.health = enemy.health - totalDamage;
-                 alert("You hit" + playerAttackValues[0] + "damage" + playerAttackValues[1] + "times.");
+                 alert("You hit" + playerAttackValues[0] + " damage " + playerAttackValues[1] + " times. ");
                  if (enemy.health <= 0){
                      alert("you win! refresh browser");
                      getPlayerHealth.innerHTML = 'Health: ' + player.health;
